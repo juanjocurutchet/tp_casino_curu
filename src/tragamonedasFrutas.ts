@@ -79,7 +79,7 @@ export class TragamonedasFrutas extends Tragamonedas {
     }
 
     private verificarTresIguales(): boolean {
-        /*let condicion:boolean=false;
+        let condicion:boolean=false;
         let cantidad:number;
         for (let j:number =0;j<3;j++){
             cantidad=1;
@@ -93,13 +93,9 @@ export class TragamonedasFrutas extends Tragamonedas {
             }
         }
 
-        return condicion;*/
+        return condicion;
         // Comprobar filas
-        for (let i = 0; i < 3; i++) {
-            if (this.tirada[0][i] === this.tirada[1][i] && this.tirada[0][i] === this.tirada[2][i]) {
-                return true;
-            }
-        }
+        
 
         // Si no se encontraron tres iguales en cada array
         return false;
